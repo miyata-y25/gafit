@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/*==================================================================================================
+    サイト基礎
+==================================================================================================*/
+/*==================================================================================================
+    main
+==================================================================================================*/
+.top-main {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.insta-area {
+  padding: 3.125em 0;
+}
+.insta-area__ttl {
+  text-align: center;
+  margin-bottom: 1.25em;
+}
+.insta-area__ttl img {
+  max-width: 26.25em;
+}
+.insta-area__bnr {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 565px;
+}
+
+.about-txt {
+  width: 90%;
+  max-width: 621px;
+  margin: 0 auto;
+  padding: 3.125em 20px;
+}
+
+.sec {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 1.875em 20px;
+}
+.sec__ttl {
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+@media screen and (max-width: 768px) {
+  .sec__ttl {
+    margin-bottom: 1.25em;
+  }
+}
+.sec__ttl img {
+  height: 2.9375em;
+  width: auto;
+}
+@media screen and (max-width: 768px) {
+  .sec__ttl img {
+    height: 1.875em;
+  }
+}
+.sec__txt {
+  margin-bottom: 1.875em;
+  text-align: center;
+}
+.accordion {
+  position: relative;
+  margin-bottom: 0;
+}
+.accordion .accordionBtn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  margin: auto;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  text-align: center;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  font-weight: bold;
+  padding: 1em;
+  background-color: transparent;
+  border: 1px solid #000;
+  line-height: 1.2;
+  width: 300px;
+  bottom: 2em;
+}
+.accordion .accordionText {
+  overflow: hidden;
+  position: relative;
+}
+.accordion .accordionText:before {
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(20%, white), to(rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(bottom, white 0%, white 20%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(0deg, white 0%, white 20%, rgba(255, 255, 255, 0) 100%);
+  bottom: 0;
+  content: "";
+  height: 50%;
+  position: absolute;
+  width: 100%;
+}
+.accordion .accordionText.isHide {
+  height: 50vh;
+}
+
+.accordion .accordionBtn::after {
+  content: "もっと見る";
+}
+
+.accordion .accordionBtn.isShow {
+  bottom: -1em;
+  background-color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .accordion .accordionBtn.isShow {
+    bottom: -3em;
+  }
+}
+
+.accordion .accordionBtn.isShow::after {
+  content: "閉じる";
+}
+
+.accordion .accordionBtn.isShow + .accordionText::before {
+  display: none;
+}
+
+.recruit-area {
+  max-width: 980px;
+  margin: 5em auto 0;
+  padding: 0 20px 1.875em;
+  border-top: 1px solid #000;
+}
+.recruit-area__ttl {
+  margin-top: -1.5em;
+  margin-bottom: 1.5625em;
+  text-align: center;
+}
+.recruit-area__ttl img {
+  height: 3.125em;
+  width: auto;
+}
+.recruit-area__txt {
+  padding: 0 20px;
+  text-align: center;
+}
+.recruit-area__txt img {
+  max-width: 26.9375em;
+}
+.recruit-area__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: clamp(1.125em, 1.25vw, 1.25em);
+  max-width: 800px;
+  margin: 0 auto;
+}
+.recruit-area__info dt {
+  width: 12em;
+}
+@media screen and (max-width: 768px) {
+  .recruit-area__info dt {
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+  }
+}
+.recruit-area__info dd {
+  width: calc(100% - 13em);
+  margin-bottom: 3em;
+}
+@media screen and (max-width: 768px) {
+  .recruit-area__info dd {
+    width: 100%;
+    border-bottom: 1px dotted #333;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+.access-area {
+  max-width: 980px;
+  margin: 5em auto 0;
+  padding: 0 0 1.875em;
+  border-top: 1px solid #000;
+}
+.access-area__ttl {
+  margin-top: -1.5em;
+  margin-bottom: 1.5625em;
+  text-align: center;
+}
+.access-area__ttl img {
+  height: 3.125em;
+  width: auto;
+}
+.access-area__txt {
+  padding: 0 20px;
+  text-align: center;
+}
+.access-area__txt img {
+  max-width: 26.9375em;
+}

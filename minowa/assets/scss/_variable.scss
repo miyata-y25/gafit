@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+//------------------------------------------------------------
+//    【必須】サイト設定 - 変数
+//------------------------------------------------------------
+
+//■フォント
+
+    $default-font    : "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    $Josefin-font      : 'Josefin Sans', sans-serif;
+    $Mont-font      : "Montserrat", serif;
+    $Oswald-font      : "Oswald", serif;
+    $Oswald-font      : "M PLUS Rounded 1c", serif;
+
+//■アニメーション
+
+    $default-transition: true;
+    $default-transition-duration: .3s;
+
+
+//■マウスオーバー時のリンク画像の透過
+
+    $default-img-hover: true;
+    $default-img-hover-opacity: 0.7;
+
+
+//------------------------------------------------------------
+//    【カスタム】変数
+//------------------------------------------------------------
+
+//■サイト幅
+    $width-site : 1200px;
+    $space-width: 20px;
+
+//■ブレイクポイント
+    $screen-xl : 1366px;
+    $screen-lg : 1080px;
+    $screen-md : 960px;
+    $screen-sm : 768px;
+    $screen-xs : 640px;
+
+//■サイトカラー
+    $gre : #9DC938;
+    $red : #E60012;
+

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.75;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+      }
+    </style>
+  </defs>
+  <g id="グループ化_152" data-name="グループ化 152" transform="translate(-1509 -389)">
+    <rect id="長方形_215" data-name="長方形 215" class="cls-1" width="72" height="72" rx="36" transform="translate(1509 389)"/>
+    <path id="パス_104" data-name="パス 104" class="cls-2" d="M7673.316-131l-20,20,20,20" transform="translate(-6120.816 536.5)"/>
+  </g>
+</svg>

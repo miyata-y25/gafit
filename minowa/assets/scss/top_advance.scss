@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+@import "variable";
+@import "basic/mixin";
+@import "basic/selector";
+
+
+/*==================================================================================================
+    サイト基礎
+==================================================================================================*/
+body {
+}
+
+.wrap {
+}
+
+/*==================================================================================================
+    main
+==================================================================================================*/
+.top-main {
+    max-width: 1120px;
+    margin: 0 auto;
+    @include max-screen($screen-sm) {
+    }
+}
+
+.insta-area {
+    padding: (50em/16) 0;
+    &__ttl {
+        text-align: center;
+        margin-bottom: (20em/16);
+        img {
+            max-width: (420em/16);
+        }
+    }
+    &__bnr {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        max-width: 565px;
+    }
+}
+
+.about-txt {
+    width: 90%;
+    max-width: 621px;
+    margin: 0 auto;
+    padding: (50em/16) 20px;
+}
+
+.sec {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: (30em/16) 20px;
+    &__ttl {
+        text-align: center;
+        margin-bottom: (40em/16);
+        @include max-screen($screen-sm) {
+            margin-bottom: (20em/16);
+        }
+        img {
+            height: (47em/16);
+            width: auto;
+            @include max-screen($screen-sm) {
+                height: (30em/16);
+            }
+        }
+    }
+    &__txt {
+        margin-bottom: (30em/16);
+        text-align: center;
+    }
+    &.--01 {
+        .sec__ttl {
+            img {
+            }
+        }
+    }
+    &.--02 {
+        .sec__ttl {
+            img {
+            }
+        }
+    }
+}
+
+.accordion {
+    position: relative;
+    margin-bottom: 0;
+    .accordionBtn {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: inline-block;
+        margin: auto;
+        font-size: 1.2em;
+        letter-spacing: .1em;
+        text-align: center;
+        z-index: 1;
+        cursor: pointer;
+        -webkit-transition: all .2s ease-out;
+        transition: all .2s ease-out;
+        font-weight: bold;
+        padding: 1em;
+        background-color: transparent;
+        border: 1px solid #000;
+        line-height: 1.2;
+        width: 300px;
+        bottom: 2em;
+    }
+    .accordionText {
+        overflow: hidden;
+        position: relative;
+        &:before {
+            background: linear-gradient(0deg, white 0%, white 20%, rgba(255, 255, 255, 0) 100%);
+            bottom: 0;
+            content: "";
+            height: 50%;
+            position: absolute;
+            width: 100%;
+        }
+        &.isHide {
+            height: 50vh;
+        }
+    }
+}
+
+.accordion .accordionBtn::after {
+    content: "もっと見る"
+}
+
+.accordion .accordionBtn.isShow {
+    bottom: -1em;
+    @include max-screen($screen-sm) {
+        bottom: -3em;
+    }
+    background-color: #fff
+}
+
+.accordion .accordionBtn.isShow::after {
+    content: "閉じる"
+}
+
+.accordion .accordionBtn.isShow+.accordionText::before {
+    display: none
+}
+
+.recruit-area {
+    max-width: 980px;
+    margin: (80em/16) auto 0;
+    padding: 0 20px (30em/16);;
+    border-top: 1px solid #000;
+    &__ttl {
+        margin-top: (-24em/16);
+        margin-bottom: (25em/16);
+        text-align: center;
+        img {
+            height: (50em/16);
+            width: auto;
+        }
+    }
+    &__txt {
+        padding: 0 20px;
+        text-align: center;
+        img {
+            max-width: (431em/16);
+        }
+    }
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: clamp((18em/16), 1.25vw , (20em/16));
+        max-width: 800px;
+        margin: 0 auto;
+        dt {
+            width: 12em;
+            @include max-screen($screen-sm) {
+                width: 100%;
+                font-weight: bold;
+                margin-bottom: 0.5em;
+                font-size: 1.2em;
+            }
+        }
+        dd {
+            width: calc(100% - 13em);
+            margin-bottom: 3em;
+            @include max-screen($screen-sm) {
+                width: 100%;
+                border-bottom: 1px dotted #333;
+                margin-bottom: 1em;
+                padding-bottom: 1em;
+            }
+        }
+    }
+}
+
+.access-area {
+    max-width: 980px;
+    margin: (80em/16) auto 0;
+    padding: 0 0 (30em/16);
+    border-top: 1px solid #000;
+    &__ttl {
+        margin-top: (-24em/16);
+        margin-bottom: (25em/16);
+        text-align: center;
+        img {
+            height: (50em/16);
+            width: auto;
+        }
+    }
+    &__txt {
+        padding: 0 20px;
+        text-align: center;
+        img {
+            max-width: (431em/16);
+        }
+    }
+}
+
+
